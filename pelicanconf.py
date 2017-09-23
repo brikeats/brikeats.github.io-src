@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Brian Keating'
 SITENAME = u'Brian Keating'
-SITEURL = ''
+SITEURL = 'https://brikeats.github.io'
 
 PATH = 'content'
 
@@ -48,3 +48,4 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+RELATIVE_URLS = False
