@@ -4,18 +4,20 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Brian Keating'
 SITENAME = u'Brian Keating'
-SITEURL = 'https://brikeats.github.io'
-
-PATH = 'content'
-
+#SITEURL = 'https://brikeats.github.io'
+SITEURL = ''
+SITETITLE = 'Brian Keating'
+SITESUBTITLE = 'Compter Vision Guy'
 TIMEZONE = 'America/Chicago'
-
 DEFAULT_LANG = u'en'
 
-# # static paths will be copied without parsing their contents
-STATIC_PATHS = ['images']  # 'extra/robots.txt'
+PATH = 'content'
+PLUGIN_PATHS = ['pelican-plugins']
+PLUGINS = ['render_math', 'pelican_youtube']
+STATIC_PATHS = ['images', 'pdfs']  # 'extra/robots.txt'
+MD_EXTENSIONS = ['mdx_video']
 
-INDEX_SAVE_AS = 'blog.html'
+INDEX_SAVE_AS = 'blog.html'  # has the effect seeting the home page to pages/index.html
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
 
@@ -27,12 +29,24 @@ MENUITEMS = (
 )
 
 
+
+THEME = 'pelican-themes/Flex'
+SITELOGO = 'images/headshot.jpg'
+
+# THEME = 'pelican-themes/crowsfoot'
+# SHOW_ARTICLE_AUTHOR = False
+# EMAIL_ADDRESSS = 'brikeats@gmail.com'
+# GITHUB_ADDRESS = 'https://github.com/brikeats'
+# PROFILE_IMAGE_URL = 'images/headshot.jpg'
+
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
+
 
 # # Blogroll
 # LINKS = (('Pelican', 'http://getpelican.com/'),
