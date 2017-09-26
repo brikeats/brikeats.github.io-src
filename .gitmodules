@@ -1,3 +1,4 @@
 [submodule "output"]
 	path = output
 	url = git@github.com:brikeats/brikeats.github.io.git
+	master = master
