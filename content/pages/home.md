@@ -1,13 +1,18 @@
 Title: Brian Keating
-Slug: brians-homepage
+Slug: index
+URL: 
 Author: Brian Keating
 Summary: Brian's Homepage
 save_as: index.html
 
+Lorem ipsum dolor sit amet, some math: $\chi^2$ consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+$$\alpha_0^\xi$$
 
-# Home Title
+[notebook link]({filename}/notebooks/Register.html)
+[image link]({filename}/images/headshot.jpg)
+[![Alt text](https://img.youtube.com/vi/uPN-GcFqN1o/0.jpg)](https://www.youtube.com/watch?v=uPN-GcFqN1o)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 
 https://www.youtube.com/watch?v=uPN-GcFqN1o
 
@@ -17,18 +22,18 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-```
-import cv2
 
-def deskew(img):
-    m = cv2.moments(img)
-    if abs(m['mu02']) < 1e-2:
-        return img.copy()
-    skew = m['mu11']/m['mu02']
-    M = np.float32([[1, skew, -0.5*SZ*skew], [0, 1, 0]])
-    img = cv2.warpAffine(img, M, (SZ, SZ), flags=cv2.WARP_INVERSE_MAP | cv2.INTER_LINEAR)
-    return img
-```
+    import cv2
+
+    def deskew(img):
+        m = cv2.moments(img)
+        if abs(m['mu02']) < 1e-2:
+            return img.copy()
+        skew = m['mu11']/m['mu02']
+        M = np.float32([[1, skew, -0.5*SZ*skew], [0, 1, 0]])
+        img = cv2.warpAffine(img, M, (SZ, SZ), flags=cv2.WARP_INVERSE_MAP | cv2.INTER_LINEAR)
+        return img
+
 
 * list item
 * list item2
