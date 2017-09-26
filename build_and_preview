@@ -1,0 +1,24 @@
+#!/bin/bash
+
+
+##### Handle Notebooks #####
+# TODO: skip this part if no notebooks, or if jupyter not available
+# TODO: handle stupid filenames -- convert to lowercase, eliminate spaces
+
+NOTEBOOK_DIR='content/notebooks'
+
+# manually convert notebooks to html
+NOTEBOOKS=${NOTEBOOK_DIR}/*.ipynb
+for NB in ${NOTEBOOKS}
+do
+  echo "Converting ${SRC_NB} to html..."
+  jupyter nbconvert -y --to html ${NB}
+done
+
+##### Done Handling Notebooks #####
+
+
+make html
+echo Starting server on http://localhost:8000/
+google-chrome http://localhost:8000/ &
+make serve

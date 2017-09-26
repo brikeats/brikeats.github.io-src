@@ -1,11 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import os
 
 AUTHOR = u'Brian Keating'
 SITENAME = u'Brian Keating'
-#SITEURL = 'https://brikeats.github.io'
+# SITEURL = 'https://brikeats.github.io'
 SITEURL = ''
+
 SITETITLE = 'Brian Keating'
 SITESUBTITLE = 'Compter Vision Guy'
 TIMEZONE = 'America/Chicago'
@@ -13,9 +15,12 @@ DEFAULT_LANG = u'en'
 
 PATH = 'content'
 PLUGIN_PATHS = ['pelican-plugins']
-PLUGINS = ['render_math', 'pelican_youtube']
-STATIC_PATHS = ['images', 'pdfs']  # 'extra/robots.txt'
-MD_EXTENSIONS = ['mdx_video']
+PLUGINS = ['render_math']
+STATIC_PATHS = ['images', 'pdfs', 'notebooks']  # 'extra/robots.txt'
+ARTICLE_EXCLUDES = ['notebooks']
+READERS = {'notebooks': None}
+#MARKDOWN = ['mdx_video']
+
 
 INDEX_SAVE_AS = 'blog.html'  # has the effect seeting the home page to pages/index.html
 DISPLAY_PAGES_ON_MENU = False
@@ -28,17 +33,39 @@ MENUITEMS = (
     ('BLOG', '/blog.html')
 )
 
+#### Select a theme
 
 
-THEME = 'pelican-themes/Flex'
-SITELOGO = 'images/headshot.jpg'
+# THEME = 'pelican-themes/chameleon'
+# AUTHORS = {}
 
-# THEME = 'pelican-themes/crowsfoot'
-# SHOW_ARTICLE_AUTHOR = False
-# EMAIL_ADDRESSS = 'brikeats@gmail.com'
-# GITHUB_ADDRESS = 'https://github.com/brikeats'
-# PROFILE_IMAGE_URL = 'images/headshot.jpg'
+# THEME = 'pelican-themes/voidy-bootstrap/'
+# THEME = 'pelican-themes/fresh'
+# THEME = 'pelican-themes/simple-bootstrap'
 
+# THEME = 'pelican-themes/pelican-blue'  # no image
+
+# THEME = 'pelican-themes/notebook'
+# AVATAR = 'images/headshot.jpg'
+
+# THEME = 'pelican-themes/nikhil-theme'  # no image
+
+# THEME = 'pelican-themes/html5-dopetrope'
+# MAIL = 'brikeats@gmail.com'
+# LINKEDIN_USER = 'brkeating'
+# SHOW_COPYRIGHT = False
+
+# # The blog is missing from the menu...
+# THEME = 'pelican-themes/Flex'
+# SITELOGO = 'images/headshot.jpg'
+
+THEME = 'pelican-themes/crowsfoot'
+SHOW_ARTICLE_AUTHOR = False
+EMAIL_ADDRESSS = 'brikeats@gmail.com'
+GITHUB_ADDRESS = 'https://github.com/brikeats'
+PROFILE_IMAGE_URL = 'images/headshot.jpg'
+
+####
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -47,7 +74,7 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-
+SHOW_ARTICLE_AUTHOR = False
 # # Blogroll
 # LINKS = (('Pelican', 'http://getpelican.com/'),
 #          ('Python.org', 'http://python.org/'),
