@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <title>Brian Keating</title>
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css' />
+      <link href='http://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'/>
+      <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,400,700' rel='stylesheet' type='text/css'/>
+      <link rel="stylesheet" type="text/css" href="/theme/css/icons.css"/>
+      <link rel="stylesheet" type="text/css" href="/theme/css/styles.css"/>
+      <meta charset="utf-8" />
+  </head>
+
+  <body id="index">
+    <!-- header -->
+    <header class="siteheader">
+      <!-- site image -->
+        <div class= "siteimage">
+          <a class="nodec" href=images/headshot.jpg>
+            <img width="200" height="200" src=images/headshot.jpg>
+          </a>
+        </div>
+
+      <div class = "sitebanner">
+        <h1><a class="sitetitle nodec" href="">Brian Keating</a></h1>
+        <h3 class ="sitesubtitle">Compter Vision Guy</h3>
+        <!-- nav -->
+        <nav class="menu">
+          <ul>
+            <!-- menu items-->
+              <li><a class="nodec" href="/">HOME</a></li>
+              <li><a class="nodec" href="/pages/about-brian.html">ABOUT</a></li>
+              <li><a class="nodec" href="/blog.html">BLOG</a></li>
+            <!--pages-->
+            <!-- services icons -->
+              <li><a class="nodec icon-github" href="https://github.com/brikeats"></a></li>
+          </ul>
+        </nav>
+      </div> <!-- sitebanner -->
+    </header>
+
+    <!-- content -->
+<div class="content">
+  <div class="article">
+    <h1>Brian Keating</h1>
+    <p>Lorem ipsum dolor sit amet, some math: <span class="math">\(\chi^2\)</span> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+</p>
+<div class="math">$$\alpha_0^\xi$$</div>
+<p><a href="/images/headshot.jpg">image link</a>
+<a href="https://www.youtube.com/watch?v=uPN-GcFqN1o"><img alt="Alt text" src="https://img.youtube.com/vi/uPN-GcFqN1o/0.jpg"></a></p>
+<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+<p>https://www.youtube.com/watch?v=uPN-GcFqN1o</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut some latex: <span class="math">\(\chi^2\)</span> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris <code>code_stuff_here</code> nisi ut aliquip ex ea commodo consequat.</p>
+<p><img alt="Alt Text" src="/images/lenet.jpg"></p>
+<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">cv2</span>
+
+<span class="k">def</span> <span class="nf">deskew</span><span class="p">(</span><span class="n">img</span><span class="p">):</span>
+    <span class="n">m</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">moments</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">m</span><span class="p">[</span><span class="s1">&#39;mu02&#39;</span><span class="p">])</span> <span class="o">&lt;</span> <span class="mf">1e-2</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">img</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">skew</span> <span class="o">=</span> <span class="n">m</span><span class="p">[</span><span class="s1">&#39;mu11&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">m</span><span class="p">[</span><span class="s1">&#39;mu02&#39;</span><span class="p">]</span>
+    <span class="n">M</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="n">skew</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5</span><span class="o">*</span><span class="n">SZ</span><span class="o">*</span><span class="n">skew</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]])</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">warpAffine</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">M</span><span class="p">,</span> <span class="p">(</span><span class="n">SZ</span><span class="p">,</span> <span class="n">SZ</span><span class="p">),</span> <span class="n">flags</span><span class="o">=</span><span class="n">cv2</span><span class="o">.</span><span class="n">WARP_INVERSE_MAP</span> <span class="o">|</span> <span class="n">cv2</span><span class="o">.</span><span class="n">INTER_LINEAR</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">img</span>
+</pre></div>
+
+
+<ul>
+<li>list item</li>
+<li>list item2</li>
+</ul>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+  </div>
+</div>
+
+    <!-- footer -->
+    <footer>
+      <p>
+        © Brian Keating, license <a href=""> </a>
+        unless otherwise noted.
+        Generated by <a href= "http://docs.getpelican.com/">Pelican</a> with
+        <a href="http://github.com/porterjamesj/crowsfoot">crowsfoot</a> theme.
+      </p>
+    </footer>
+  </body>
+</html>
