@@ -6,8 +6,8 @@
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css' />
       <link href='http://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'/>
       <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,400,700' rel='stylesheet' type='text/css'/>
-      <link rel="stylesheet" type="text/css" href="http://brikeats.github.io/theme/css/icons.css"/>
-      <link rel="stylesheet" type="text/css" href="http://brikeats.github.io/theme/css/styles.css"/>
+      <link rel="stylesheet" type="text/css" href="https://brikeats.github.io/theme/css/icons.css"/>
+      <link rel="stylesheet" type="text/css" href="https://brikeats.github.io/theme/css/styles.css"/>
       <meta charset="utf-8" />
   </head>
 
@@ -22,7 +22,7 @@
         </div>
 
       <div class = "sitebanner">
-        <h1><a class="sitetitle nodec" href="http://brikeats.github.io">Brian Keating</a></h1>
+        <h1><a class="sitetitle nodec" href="https://brikeats.github.io">Brian Keating</a></h1>
         <h3 class ="sitesubtitle">Compter Vision Guy</h3>
         <!-- nav -->
         <nav class="menu">
@@ -57,15 +57,15 @@
   </div><!-- .postinfo -->
 
   <div class="article">
-    <p><img alt="eclipse totality" src="http://brikeats.github.io/images/totality.jpg"></p>
+    <p><img alt="eclipse totality" src="https://brikeats.github.io/images/totality.jpg"></p>
 <p>My wife and I were fortunate enough to be able to see the eclipse in August just outside of Salem, Oregon. Our friend, Heidi, drove us down from Seattle where we were vacationing. I was concerned about the weather -- it's a bit of a drive and coastal Oregon isn't known for being sunny -- but it turned out to be a beautiful cloudless day and totality was just spectacular. I didn't get any pics of totality, but Heidi had brought her non-phone camera and got some good pics of totality (including the one above) and a video of the "diamond ring". She didn't have a tripod, so the sun wanders about in the frame:</p>
 <p><a href="https://www.youtube.com/watch?v=q3EKl2VAPe0"><img alt="Alt text" src="https://img.youtube.com/vi/q3EKl2VAPe0/0.jpg"></a></p>
 <p>Looks pretty good, but I wanted to correct for this motion. This is a fairly easy problem, since the sun is infinitely far away and it doesn't change shape (so we only need to find 2 translations to register the frames), and the background is featureless black sky. I initially tried creating an eclipse-looking template, and using that to search each frame for the sun's position. This mostly worked well, but it was not robust -- it failed badly for some frames. I believe that some of the lens flares and other artifacts hurt the performance.</p>
 <p>Finally, I just used <a href="http://scikit-image.org/docs/dev/auto_examples/transform/plot_register_translation.html">skimage's register_translation</a> function to register consecutive frames. With the correct translations in hand, I zero pad the images such that the sun is in the center of every frame, write the images to file, and make them into a movie with ffmpeg. I also grabbed this image of the diamond ring:</p>
-<p><img alt="eclipse diamond ring" src="http://brikeats.github.io/images/diamond_ring.jpg"></p>
+<p><img alt="eclipse diamond ring" src="https://brikeats.github.io/images/diamond_ring.jpg"></p>
 <p>The final result:</p>
 <p><a href="https://www.youtube.com/watch?v=uao88kE0ukA"><img alt="Alt text" src="https://img.youtube.com/vi/uao88kE0ukA/0.jpg"></a></p>
-<p>The notebook used to produce these videos can be viewed <a href="http://brikeats.github.io/notebooks/eclipse.html">here</a> or downloaded <a href="http://brikeats.github.io/notebooks/eclipse.ipynb">here</a>.</p>
+<p>The notebook used to produce these videos can be viewed <a href="https://brikeats.github.io/notebooks/eclipse.html">here</a> or downloaded <a href="https://brikeats.github.io/notebooks/eclipse.ipynb">here</a>.</p>
   </div><!-- .content -->
 
 </section>
