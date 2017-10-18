@@ -5,37 +5,6 @@ Author: Brian Keating
 Summary: Brian's Homepage
 save_as: index.html
 
-Lorem ipsum dolor sit amet, some math: $\chi^2$ consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-$$\alpha_0^\xi$$
+I'm a computer vision dude yadda yadda who has worked professionally analyzing medical, satellite, and microscopy imagery. Currently, I lead the Computer Vision group as part of [Uptake's](www.uptake.com) data science team. Previously, I worked at the University of Chicago's Research Computing Center, and at the Univerty of Hawaii's MRI research group. You can see my [resume here]({filename}/pdfs/old_resume.pdf) and an full academic [cirriculum vitae here]({filename}/pdfs/old_cv.pdf).
 
-[image link]({filename}/images/headshot.jpg)
-[![Alt text](https://img.youtube.com/vi/uPN-GcFqN1o/0.jpg)](https://www.youtube.com/watch?v=uPN-GcFqN1o)
-
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-
-https://www.youtube.com/watch?v=uPN-GcFqN1o
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut some latex: $\chi^2$ labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris `code_stuff_here` nisi ut aliquip ex ea commodo consequat.
-
-![Alt Text]({filename}/images/lenet.jpg)
-
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-
-    import cv2
-
-    def deskew(img):
-        m = cv2.moments(img)
-        if abs(m['mu02']) < 1e-2:
-            return img.copy()
-        skew = m['mu11']/m['mu02']
-        M = np.float32([[1, skew, -0.5*SZ*skew], [0, 1, 0]])
-        img = cv2.warpAffine(img, M, (SZ, SZ), flags=cv2.WARP_INVERSE_MAP | cv2.INTER_LINEAR)
-        return img
-
-
-* list item
-* list item2
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+The remarkable success of deep learning in computer vision has led me to increasingly reach to convolutional neural nets as the backbone of much of my work analyzing satellite imagery. Reading up on the literature for deep learning, it is hard not become excited about in the possibilities of AI in the coming years. I'm particularly interested in computer vision especially in embodied systems, i.e., robots.  [My blog]() will serve as a clearinghouse for demos, documentation, links, and notes related to personal projects (particularly robotics).
