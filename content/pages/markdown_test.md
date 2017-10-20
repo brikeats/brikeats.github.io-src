@@ -6,9 +6,9 @@ Summary: Test for plugins and markdown display
 
 Lorem ipsum dolor sit amet, some math: $\chi^2$ consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 $$\alpha_0^\xi$$
-
-[image link]({filename}/images/headshot.jpg)
-[![Alt text](https://img.youtube.com/vi/uPN-GcFqN1o/0.jpg)](https://www.youtube.com/watch?v=uPN-GcFqN1o)
+  
+#
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bLqJHjXihK8" frameborder="0" allowfullscreen></iframe>
 
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 

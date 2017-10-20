@@ -1,0 +1,53 @@
+#!/bin/bash
+
+
+if [ $# -ne 1 ]; then 
+  echo Usage: ./build_and_publish \"a commit message for git in quotes\"
+  exit
+fi
+
+
+##### Handle Notebooks #####
+# TODO: skip this part if no notebooks, or if jupyter not available
+# TODO: handle stupid filenames -- convert to lowercase, eliminate spaces
+
+NOTEBOOK_DIR='content/notebooks'
+
+# manually convert notebooks to html
+NOTEBOOKS=${NOTEBOOK_DIR}/*.ipynb
+for NB in ${NOTEBOOKS}
+do
+  echo "Converting ${SRC_NB} to html..."
+  jupyter nbconvert -y --to html ${NB}
+done
+
+##### Done Handling Notebooks #####
+
+
+make html
+
+# a hack to toggle between http and https for preview/deploy
+sed -i -e "s,SITEURL = '',SITEURL = 'https://brikeats.github.io',g" pelicanconf.py
+
+cd output
+GIT_DIFF=$(git diff) 
+if [ "$GIT_DIFF" != "" ] 
+then
+  echo Adding commit \"$1\" " for build repo"
+  git add .
+  git commit -m \"$1\"
+  git push origin master
+fi
+
+cd ..
+GIT_DIFF=$(git diff) 
+if [ "$GIT_DIFF" != "" ] 
+then
+  echo Adding commit \"$1\" " for source repo"
+  echo git add .
+  echo git commit -m \"$1\"
+  echo git push origin master
+fi
+
+cd ..
+sed -i -e "s,SITEURL = 'https://brikeats.github.io',SITEURL = '',g" pelicanconf.py
