@@ -4,7 +4,7 @@ URL:
 Author: Brian Keating
 Summary: Test for plugins and markdown display
 
-Lorem ipsum dolor sit amet, some math: $\chi^2$ consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Check, check. Lorem ipsum dolor sit amet, some math: $\chi^2$ consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 $$\alpha_0^\xi$$
   
 #
