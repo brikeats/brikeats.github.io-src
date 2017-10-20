@@ -30,14 +30,14 @@ make html
 sed -i -e "s,SITEURL = '',SITEURL = 'https://brikeats.github.io',g" pelicanconf.py
 
 cd output
-# GIT_DIFF=$(git diff) 
-# if [ "$GIT_DIFF" != "" ] 
-# then
-#   echo Adding commit \"$1\" " for build repo"
-#   echo git add .
-#   echo git commit -m "$1"
-#   echo git push origin master
-# fi
+GIT_DIFF=$(git diff) 
+if [ "$GIT_DIFF" != "" ] 
+then
+  echo Adding commit \"$1\" " for build repo"
+  git add .
+  git commit -m "$1"
+  git push origin master
+fi
 
 cd ..
 GIT_DIFF=$(git diff) 
