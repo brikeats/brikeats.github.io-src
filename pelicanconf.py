@@ -5,7 +5,7 @@ import os
 
 AUTHOR = u'Brian Keating'
 SITENAME = u'Brian Keating'
-SITEURL = 'https://brikeats.github.io'
+SITEURL = ''
 
 SITETITLE = 'Brian Keating'
 SITESUBTITLE = 'Compter Vision Guy'
