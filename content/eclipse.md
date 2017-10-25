@@ -5,7 +5,7 @@ Category: Demos
 Tags: demo, video
 Slug: eclipse
 Author: Brian Keating
-Summary: Eclipse
+Summary: Correcting motion in a video sequence of the 2017 eclipse.
 
 ![eclipse totality]({filename}/images/totality.jpg)
 
