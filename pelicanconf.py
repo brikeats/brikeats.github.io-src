@@ -44,9 +44,6 @@ MENUITEMS = (
 
 # THEME = 'pelican-themes/pelican-blue'  # no image
 
-# THEME = 'pelican-themes/notebook'
-# AVATAR = 'images/headshot.jpg'
-
 # THEME = 'pelican-themes/nikhil-theme'  # no image
 
 # THEME = 'pelican-themes/html5-dopetrope'
