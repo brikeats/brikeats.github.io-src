@@ -4,7 +4,6 @@ from __future__ import unicode_literals
 import os
 
 AUTHOR = u'Brian Keating'
-SITENAME = u'Brian Keating'
 SITEURL = 'https://brikeats.github.io'
 
 SITETITLE = 'Brian Keating'
@@ -27,33 +26,12 @@ DISPLAY_CATEGORIES_ON_MENU = False
 
 # the links here should match the slugs in the files
 MENUITEMS = (
-    ('HOME', '/'),
-    ('ABOUT', '/pages/about-brian.html'),  
-    ('BLOG', '/blog.html')
+    ('home', '/'),
+    ('about', '/pages/about-brian.html'),  
+    ('blog', '/blog.html')
 )
 
 #### Select a theme
-
-
-# THEME = 'pelican-themes/chameleon'
-# AUTHORS = {}
-
-# THEME = 'pelican-themes/voidy-bootstrap/'
-# THEME = 'pelican-themes/fresh'
-# THEME = 'pelican-themes/simple-bootstrap'
-
-# THEME = 'pelican-themes/pelican-blue'  # no image
-
-# THEME = 'pelican-themes/nikhil-theme'  # no image
-
-# THEME = 'pelican-themes/html5-dopetrope'
-# MAIL = 'brikeats@gmail.com'
-# LINKEDIN_USER = 'brkeating'
-# SHOW_COPYRIGHT = False
-
-# # The blog is missing from the menu...
-# THEME = 'pelican-themes/Flex'
-# SITELOGO = 'images/headshot.jpg'
 
 THEME = 'pelican-themes/crowsfoot'
 SHOW_ARTICLE_AUTHOR = False

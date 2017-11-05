@@ -20,5 +20,7 @@ done
 
 make html
 echo Starting server on http://localhost:8000/
+# google-chrome http://localhost:8000/pages/markdown-test.html &
 google-chrome http://localhost:8000/blog.html &
+# google-chrome http://localhost:8000/ &
 make serve
