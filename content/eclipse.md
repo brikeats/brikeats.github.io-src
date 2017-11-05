@@ -16,7 +16,7 @@ My wife and I were fortunate enough to be able to see the eclipse in August just
 #
 
 
-Looks pretty awesome, but I wanted to correct for this motion. This is a fairly easy problem, since the sun is infinitely far away and it doesn't change shape (so we only need to find 2 translations to register the frames), and the background is featureless black sky. I initially tried creating an eclipse-looking template, and using that to search each frame for the sun's position. This mostly worked well, but it was not robust -- it failed badly for some frames. I believe that some of the lens flares and other artifacts hurt the performance.
+Looks pretty awesome, but I wanted to correct for this motion. This is a fairly easy problem, since the sun is infinitely far away and it doesn't change shape (so we only need to find 2 translations to register the frames), and the background is featureless black sky. I initially tried creating an eclipse-looking template, and used that to search each frame for the sun's position. This mostly worked well, but it was not robust -- it failed badly for some frames. I believe that some of the lens flares and other artifacts hurt the performance.
 
 Finally, I just used [skimage's register_translation](http://scikit-image.org/docs/dev/auto_examples/transform/plot_register_translation.html) function to register consecutive frames. With the correct translations in hand, I zero pad the images such that the sun is in the center of every frame, write the images to file, and make them into a movie with ffmpeg. I also grabbed this image of the diamond ring:
 
