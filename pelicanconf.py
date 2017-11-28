@@ -5,7 +5,8 @@ import os
 
 AUTHOR = u'Brian Keating'
 SITEURL = 'https://brikeats.github.io'
-
+SITENAME = 'Brian Keating'
+TITLE = 'Brian Keating'
 SITETITLE = 'Brian Keating'
 SITESUBTITLE = 'Compter Vision Guy'
 TIMEZONE = 'America/Chicago'
@@ -27,7 +28,6 @@ DISPLAY_CATEGORIES_ON_MENU = False
 # the links here should match the slugs in the files
 MENUITEMS = (
     ('home', '/'),
-    ('about', '/pages/about-brian.html'),  
     ('blog', '/blog.html')
 )
 
@@ -35,7 +35,7 @@ MENUITEMS = (
 
 THEME = 'pelican-themes/crowsfoot'
 SHOW_ARTICLE_AUTHOR = False
-EMAIL_ADDRESSS = 'brikeats@gmail.com'
+EMAIL_ADDRESS = 'brikeats@gmail.com'
 GITHUB_ADDRESS = 'https://github.com/brikeats'
 PROFILE_IMAGE_URL = 'images/headshot.jpg'
 
