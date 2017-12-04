@@ -8,7 +8,7 @@ SITEURL = 'https://brikeats.github.io'
 SITENAME = 'Brian Keating'
 TITLE = 'Brian Keating'
 SITETITLE = 'Brian Keating'
-SITESUBTITLE = 'Compter Vision Guy'
+SITESUBTITLE = 'Compter Vision Engineer'
 TIMEZONE = 'America/Chicago'
 DEFAULT_LANG = u'en'
 

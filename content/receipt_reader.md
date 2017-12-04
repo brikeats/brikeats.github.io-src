@@ -103,9 +103,9 @@ The preprocessing script takes a possibly-shitty input image, and prepares it fo
     - horizontal line in the bottom half of the image
     - vertical line in the left half of the image
     - vertical line in the right half of the image
-   These lines are the receipt edges. This step assumes that the receipt is lighter in value than the background.
-* Intersect the lines to get the corners of the receipt. 
-* Warp so that the corners are axis-aligned. This makes the receipt image rectangular and has the effect of cropping out the background.
+   These lines are the receipt edges. This step assumes that the receipt is lighter in value than the background
+* intersect the lines to get the corners of the receipt
+* warp so that the corners are axis-aligned. This makes the receipt image rectangular and has the effect of cropping out the background
 
 I initially experimented with directly detecting the corners using templates, rather than detecting the edges and then computing their intersection. I've found the method desribed above to be more robust to cast shadows that fall across the receipt and to work better when the receipt is not lying flat on the surface.
 
@@ -113,7 +113,7 @@ The notebook used to produce develop the preprocessing script can be viewed [her
 
 ### OCR
 
-I used Azure's computer vision API to do the OCR. Google and amazon also offer such services, but Azure's API was the only one that returns the bounding box of each of the words. This is very important for parsing the contents. In addition to the word bounding boxes, the Azure API also tries to group the words into sections. I didn't find this to be useful at all.
+I used Azure's computer vision API to do the OCR. Google and Amazon also offer such services, but Azure's API was the only one that returns the bounding box of each of the words. This is very important for parsing the contents. In addition to the word bounding boxes, the Azure API also tries to group the words into sections. I didn't find this to be useful at all.
 
 ### Parsing
 
