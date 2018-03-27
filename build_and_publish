@@ -21,8 +21,12 @@ do
   jupyter nbconvert -y --to html ${NB}
 done
 
-##### Done Handling Notebooks #####
+##### Generate Beer page markdown #####
 
+python content/beer/make_beer_page.py
+
+
+##### Pelican Site Generation #####
 
 make html
 

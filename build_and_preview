@@ -15,12 +15,16 @@ do
   jupyter nbconvert -y --to html ${NB}
 done
 
-##### Done Handling Notebooks #####
 
+##### Generate Beer page markdown #####
+
+python content/beer/make_beer_page.py
+
+
+##### Pelican Site Generation #####
 
 make html
 echo Starting server on http://localhost:8000/
 # google-chrome http://localhost:8000/pages/markdown-test.html &
-google-chrome http://localhost:8000/blog.html &
-# google-chrome http://localhost:8000/ &
+google-chrome http://localhost:8000/index.html &
 make serve

@@ -15,20 +15,22 @@ DEFAULT_LANG = u'en'
 PATH = 'content'
 PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ['render_math']
-STATIC_PATHS = ['images', 'pdfs', 'notebooks']  # 'extra/robots.txt'
-ARTICLE_EXCLUDES = ['notebooks']
+STATIC_PATHS = ['images', 'pdfs', 'notebooks', 'beer']  # 'extra/robots.txt'
+ARTICLE_EXCLUDES = ['notebooks', 'beer']
 READERS = {'notebooks': None}
 #MARKDOWN = ['mdx_video']
 
 
 INDEX_SAVE_AS = 'blog.html'  # has the effect seeting the home page to pages/index.html
+
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
 
 # the links here should match the slugs in the files
 MENUITEMS = (
     ('home', '/'),
-    ('blog', '/blog.html')
+    ('blog', '/blog.html'),
+    ('beer', '/beer.html')
 )
 
 #### Select a theme
