@@ -7,4 +7,6 @@ save_as: beer.html
 
 Recipes formulated with the help of Brewer's Friend [recipe calculator](https://www.brewersfriend.com/homebrew/recipe/calculator).
 
-[whale's vagina ipa](beer/whalesvaginaipa.html)
+[whale's vagina ipa](beer/whalesvaginaipa.html) Served on draft at Healthlytix. Much darker that predicted, very murky-looking. Decent bitterness, still not as much hop smell as I'd like. Hop taste is overwhelmed by caramel flavor, doesn't come across as an IPA.
+
+[hazy ipa with cryo hops](beer/hazyipa.htm) Very good, popular at Healthlytix, one of my best. Hop smell fades after a few weeks, but still has good hop flavor. I'd prefer it a bit sweeter/less attenuated.  

@@ -16,11 +16,6 @@ do
 done
 
 
-##### Generate Beer page markdown #####
-
-python content/beer/make_beer_page.py
-
-
 ##### Pelican Site Generation #####
 
 make html
