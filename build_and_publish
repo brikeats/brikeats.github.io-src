@@ -17,8 +17,11 @@ NOTEBOOK_DIR='content/notebooks'
 NOTEBOOKS=${NOTEBOOK_DIR}/*.ipynb
 for NB in ${NOTEBOOKS}
 do
-  echo "Converting ${SRC_NB} to html..."
-  jupyter nbconvert -y --to html ${NB}
+  HTML_FN=`basename ${NB} .ipynb`.html
+  if [ ! -f ${NB} ]; then
+    echo "Converting ${NB} to html..."
+    jupyter nbconvert -y --to html ${NB}
+  fi
 done
 
 ##### Generate Beer page markdown #####
