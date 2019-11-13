@@ -9,7 +9,7 @@ SITENAME = 'Brian Keating'
 TITLE = 'Brian Keating'
 SITETITLE = 'Brian Keating'
 SITESUBTITLE = 'Compter Vision Engineer'
-TIMEZONE = 'America/Chicago'
+TIMEZONE = 'America/Los_Angeles'
 DEFAULT_LANG = u'en'
 
 PATH = 'content'
