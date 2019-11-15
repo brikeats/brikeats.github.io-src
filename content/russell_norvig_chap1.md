@@ -19,7 +19,7 @@ Chapter 1 is a fairly short introductory chapter that describes the history of A
    (d) rationality, *The book defines rationality as selecting the action which is most likely to maximize a utility function (or its expected value). This means that rationality is only defined with respect to a utility function. In common usage, it's used sort of as a synonym of "logical". With this meaning, an irrational statement is a non sequitur, and an irrational action is one which betrays a logically inconsistent internal model of the world.*
    (e) logical reasoning: **
 
-2. Read [Turing’s original paper on AI]((https://www.csee.umbc.edu/courses/471/papers/turing.pdf)) (Turing, 1950). In the paper, he discusses several objections to his proposed enterprise and his test for intelligence. Which objections still carry weight? Are his refutations valid? Can you think of new objections arising from developments since he wrote the paper? In the paper, he predicts that, by the year 2000, a computer will have a 30% chance of passing a five-minute Turing Test with an unskilled interrogator. What chance do you think a computer would have today? In another 50 years?
+2. Read [Turing’s original paper on AI](https://www.csee.umbc.edu/courses/471/papers/turing.pdf) (Turing, 1950). In the paper, he discusses several objections to his proposed enterprise and his test for intelligence. Which objections still carry weight? Are his refutations valid? Can you think of new objections arising from developments since he wrote the paper? In the paper, he predicts that, by the year 2000, a computer will have a 30% chance of passing a five-minute Turing Test with an unskilled interrogator. What chance do you think a computer would have today? In another 50 years?
 
 
 
