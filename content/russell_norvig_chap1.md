@@ -14,8 +14,8 @@ Chapter 1 is a fairly short introductory chapter that describes the history of A
 
 1. Define in your own words:
    (a) intelligence: **
-   (b) artificial intelligence: **
-   (c) agent: *A decision maker, or, in the idiotic words of GWB, a decider. Can be thought of as a function that may have internal state, which accepts percepts as input and selects actions (this is the reinforcement learning definition).*
+   (b) artificial intelligence: *The demonstration of intelligent behavior (however "intelligent" is defined) by non-biological entities. "Non-biological" is necessary to exclude Frankenstein monsters, or clones from the definition.*
+   (c) agent: *A decision maker, or, in the idiotic words of GWB, a decider. Can be thought of as a function that may have internal state, which accepts percepts as input and selects actions (this is the reinforcement learning definition). I usually think of an agent as doing sequential decision making -- a standard predictive ML model technically fits this definition, but we don't usually call it an "agent" but rather a "model" since they don't involve a sense of time or sequence.*
    (d) rationality, *The book defines rationality as selecting the action which is most likely to maximize a utility function (or its expected value). This means that rationality is only defined with respect to a utility function. In common usage, it's used sort of as a synonym of "logical". With this meaning, an irrational statement is a non sequitur, and an irrational action is one which betrays a logically inconsistent internal model of the world.*
    (e) logical reasoning: **
 
