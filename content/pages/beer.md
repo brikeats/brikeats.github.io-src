@@ -4,13 +4,13 @@ Author: Brian Keating
 Summary: Beer Recipes
 save_as: beer.html
 
-Recipes formulated with the help of Brewer's Friend [recipe calculator](https://www.brewersfriend.com/homebrew/recipe/calculator).
+I have been a homebrewer since 2005. Linked below are my latest recipes. Recipes formulated with the help of Brewer's Friend [recipe calculator](https://www.brewersfriend.com/homebrew/recipe/calculator).
 
-[st patrick's day stout](beer/stpatricksstout.htm) 3/20
+[st patrick's day stout](beer/stpatricksstout.htm) 3/20. This was kegged and ready 2 days after covid-19 shutdown. It is untouched as of 12/20.
 
 [another damn cryo ipa](beer/cryoipa.htm) 1/20. Again, pretty good. These are getting boring, but they're definitely crowd-pleasers. It seemed too sweet until it was carbonated.
 
-[ekuanotty by nature](beer/ekuaknottybynature.htm) 10/19. Very good, everybody likes it. Hop smell and esp. flavor are strong as fuck. It's got a dank taste and the mouthfeel seems thick. If I was to tweak it, I'd dilute it a bit to make it a session, dial back the dryhops slightly, and up the bittering hops a *tiny* bit.
+[ekuanotty by nature](beer/ekuaknottybynature.htm) 10/19. Very good, everybody likes it. Hop smell and esp. flavor are **strong**. It's got a dank taste and the mouthfeel seems thick. If I was to tweak it, I'd dilute it a bit to make it a session, dial back the dryhops slightly, and up the bittering hops a *tiny* bit.
 
 [precision porter](beer/porter.html) First nitro beer I've ever done. Good! True to style, some esters, popular at work.
 

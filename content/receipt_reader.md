@@ -8,7 +8,7 @@ Summary: Reading a receipt with OCR and parsing its contents.
 
 I had the idea to write an app that reads and parses the contents of a photo of a receipt to allow for easy bill splitting. This idea came to me when splitting a large happy hour check with 15 friends. Personally, I don't care about the money, and after a few beers, I would happily pay more than my share, but some of the other people in our party were pretty anal -- breaking out the calculators, computing the tip down to the exact cent, etc. "There's got to be a better way!" I thought.  
 
-Turns out [somebody alread had this idea](https://play.google.com/store/apps/details?id=com.bring10.tab&hl=en), but I thought this would be a good exercise, and that I might be able to write a more robust algorithm compared with the apps already on the market.
+Not surprisingly, [somebody already had this idea](https://play.google.com/store/apps/details?id=com.bring10.tab&hl=en), but I thought this would be a good exercise, and that I might be able to write a more robust algorithm compared with the apps already on the market.
 
 
 ## Backend

@@ -9,7 +9,7 @@ Summary: Correcting motion in a video sequence of the 2017 eclipse.
 
 ![eclipse totality]({filename}/images/totality.jpg)
 
-My wife and I were fortunate enough to be able to see the eclipse in August just outside of Salem, Oregon. Our friend, Heidi, drove us down from Seattle where we were vacationing. I was concerned about the weather -- it's a bit of a drive and coastal Oregon isn't known for being sunny -- but it turned out to be a beautiful cloudless day and totality was just spectacular. I didn't get any pics of totality, but Heidi had brought her non-phone camera and got some good pics of totality (including the one above) and a video of the "diamond ring". She didn't have a tripod, so the sun wanders about in the frame:
+My wife and I were fortunate enough to be able to see the August 2017 eclipse just outside of Salem, Oregon. Our friend, Heidi, drove us down from Seattle where we were vacationing. I was concerned about the weather -- it's a bit of a drive and coastal Oregon isn't known for being sunny -- but it turned out to be a beautiful cloudless day and totality was just spectacular. I didn't get any pics of totality, but Heidi had brought her non-phone camera and got some good pics of totality (including the one above) and a video of the "diamond ring". She didn't have a tripod, so the sun wanders about in the frame:
 
 #
 <iframe width="560" height="315" src="https://www.youtube.com/embed/q3EKl2VAPe0" frameborder="0" allowfullscreen></iframe>
