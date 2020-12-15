@@ -29,7 +29,7 @@ DISPLAY_CATEGORIES_ON_MENU = False
 # the links here should match the slugs in the files
 MENUITEMS = (
     ('home', '/'),
-    ('blog', '/blog.html'),
+    ('projects', '/blog.html'),
     ('beer', '/beer.html')
 )
 
