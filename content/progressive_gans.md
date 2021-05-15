@@ -12,33 +12,33 @@ Nvidia has a [recent paper](https://arxiv.org/pdf/1710.10196.pdf) which effectiv
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XOxxPcy5Gr4?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 #
 
-To play around with this, I cloned [the repo](https://github.com/tkarras/progressive_growing_of_gans) and downloaded the trained model binary `100-celeb-hq-1024x1024-ours` [from google drive](https://drive.google.com/open?id=0B4qLcYyJmiz0WUI5b3dBTWkxQU0). The models are implemented in Theano, which I haven't used before (and which is [no longer being developed](https://groups.google.com/forum/#!msg/theano-users/7Poq8BZutbY/rNCIfvAEAwAJ)). I wrote a notebook to use the generative model sample random celebrity faces -- input a random 512-D feature vector and it produces a celebrity face. The notebook can be viewed [here]({filename}/notebooks/generate-celeb-samples.html) or downloaded [here]({filename}/notebooks/generate-celeb-samples.ipynb). The model is pretty resource hungry -- running single-threaded on my laptop, it takes 40 seconds and ~3GB of RAM to produce a single image.
+To play around with this, I cloned [the repo](https://github.com/tkarras/progressive_growing_of_gans) and downloaded the trained model binary `100-celeb-hq-1024x1024-ours` [from google drive](https://drive.google.com/open?id=0B4qLcYyJmiz0WUI5b3dBTWkxQU0). The models are implemented in Theano, which I haven't used before (and which is [no longer being developed](https://groups.google.com/forum/#!msg/theano-users/7Poq8BZutbY/rNCIfvAEAwAJ)). I wrote a notebook to use the generative model sample random celebrity faces -- input a random 512-D feature vector and it produces a celebrity face. The notebook can be viewed [here]({static}/notebooks/generate-celeb-samples.html) or downloaded [here]({static}/notebooks/generate-celeb-samples.ipynb). The model is pretty resource hungry -- running single-threaded on my laptop, it takes 40 seconds and ~3GB of RAM to produce a single image.
 
 About half of the samples looked realistic...
 
-![realistic head shot of handsome man]({filename}/images/very_good.png)
+![realistic head shot of handsome man]({static}/images/very_good.png)
 
-![realistic head shot that looks vaguely like fat elvis]({filename}/images/good.png)
+![realistic head shot that looks vaguely like fat elvis]({static}/images/good.png)
 
 ...or almost right:
 
-![realistic head shot with half a pair of glasses]({filename}/images/disappearing_glasses.png)
+![realistic head shot with half a pair of glasses]({static}/images/disappearing_glasses.png)
 
-![lady with horrifying mole on head]({filename}/images/moley-mole-mole.png)
+![lady with horrifying mole on head]({static}/images/moley-mole-mole.png)
 
 However, about 1/3 of the images were unnerving...
 
-![woman who is too happy]({filename}/images/happy-insane.png)
+![woman who is too happy]({static}/images/happy-insane.png)
 
-![goat-woman hybrid with steve buscemi teeth]({filename}/images/bearded_woman.png)
+![goat-woman hybrid with steve buscemi teeth]({static}/images/bearded_woman.png)
 
 ...and some are downright disturbing:
 
-![nightmarish image of middle-aged man with messed up mouth]({filename}/images/nightmare.png)
+![nightmarish image of middle-aged man with messed up mouth]({static}/images/nightmare.png)
 
-![disturbing pic of young man with half-bald head that has a seam with green boogers coming out]({filename}/images/nightmare2.png)
+![disturbing pic of young man with half-bald head that has a seam with green boogers coming out]({static}/images/nightmare2.png)
 
-![otherworldly, arty-looking picture of a ghost]({filename}/images/nightmare3.png)
+![otherworldly, arty-looking picture of a ghost]({static}/images/nightmare3.png)
 
 The main purpose of this paper is to demonstrate that, with a clever multiscale training schedule, standard GANs can produce realistic images at high resolution. The most impressive results are achieved on a carefully curated dataset with a limited domain -- the celebrity dataset is carefully preprocessed using "classical" image processing so that the faces are aligned and the background is just-so. 
 

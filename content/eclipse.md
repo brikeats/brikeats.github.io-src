@@ -7,7 +7,7 @@ Slug: eclipse
 Author: Brian Keating
 Summary: Correcting motion in a video sequence of the 2017 eclipse.
 
-![eclipse totality]({filename}/images/totality.jpg)
+![eclipse totality]({static}/images/totality.jpg)
 
 My wife and I were fortunate enough to be able to see the August 2017 eclipse just outside of Salem, Oregon. Our friend, Heidi, drove us down from Seattle where we were vacationing. I was concerned about the weather -- it's a bit of a drive and coastal Oregon isn't known for being sunny -- but it turned out to be a beautiful cloudless day and totality was just spectacular. I didn't get any pics of totality, but Heidi had brought her non-phone camera and got some good pics of totality (including the one above) and a video of the "diamond ring". She didn't have a tripod, so the sun wanders about in the frame:
 
@@ -20,7 +20,7 @@ Looks pretty awesome, but I wanted to correct for this motion. This is a fairly 
 
 Finally, I just used [skimage's register_translation](http://scikit-image.org/docs/dev/auto_examples/transform/plot_register_translation.html) function to register consecutive frames. With the correct translations in hand, I zero pad the images such that the sun is in the center of every frame, write the images to file, and make them into a movie with ffmpeg. I also grabbed this image of the diamond ring:
 
-![eclipse diamond ring]({filename}/images/diamond_ring.jpg)
+![eclipse diamond ring]({static}/images/diamond_ring.jpg)
 
 The final result:
 
@@ -28,4 +28,4 @@ The final result:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uao88kE0ukA" frameborder="0" allowfullscreen></iframe>
 #
 
-The notebook used to produce these videos can be viewed [here]({filename}/notebooks/eclipse.html) or downloaded [here]({filename}/notebooks/eclipse.ipynb).
+The notebook used to produce these videos can be viewed [here]({static}/notebooks/eclipse.html) or downloaded [here]({static}/notebooks/eclipse.ipynb).

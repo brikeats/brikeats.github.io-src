@@ -24,11 +24,11 @@ The frames assigned by `ultrasonic_array` are just strings. In order to define t
 
 While working on the URDF, you can view the model with rviz with the command `roslaunch adam_description display.launch`. [The launch file](https://github.com/brikeats/ROS/blob/master/workspace/src/adam_description/launch/display.launch) uses [joint_state_publisher](http://wiki.ros.org/joint_state_publisher) and [robot_state_publisher](http://wiki.ros.org/robot_state_publisher) to publish the poses of all the robot components (including the sensors), and launches rviz to view it. My half-finished model looks like this:
 
-![Alt Text]({filename}/images/rviz_screenshot.png)
+![Alt Text]({static}/images/rviz_screenshot.png)
 
 The actual robot has tank treads and is more complete than the model:
 
-![Alt Text]({filename}/images/robot.jpg)
+![Alt Text]({static}/images/robot.jpg)
 
 
 ## Real-time rendering of Range measurements

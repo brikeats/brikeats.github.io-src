@@ -13,7 +13,7 @@ Not surprisingly, [somebody already had this idea](https://play.google.com/store
 
 ## Backend
 
-I wound up writing the backend for a [receipt reader app](https://github.com/brikeats/receipt-reader). This is a flask app hosted on heroku. It accepts `GET` requests with a receipt image attached, and returns the parsed contents of the receipts as JSON. You can test it out by downloading [this image]({filename}/images/receipt.jpg) and sending it to the heroku server with with the command `curl -F "file=@receipt.jpg" https://receipt-reader-bk.herokuapp.com/` and, after a 15-second delay, the server should response with 
+I wound up writing the backend for a [receipt reader app](https://github.com/brikeats/receipt-reader). This is a flask app hosted on heroku. It accepts `GET` requests with a receipt image attached, and returns the parsed contents of the receipts as JSON. You can test it out by downloading [this image]({static}/images/receipt.jpg) and sending it to the heroku server with with the command `curl -F "file=@receipt.jpg" https://receipt-reader-bk.herokuapp.com/` and, after a 15-second delay, the server should response with 
 
     {
       "items": [
@@ -87,7 +87,7 @@ I wound up writing the backend for a [receipt reader app](https://github.com/bri
       "total": 88.57
     }
 
-Not quite perfect, but pretty damn good. I think it got all the prices right. Another example image is [here]({filename}/images/receipt2.jpg).
+Not quite perfect, but pretty damn good. I think it got all the prices right. Another example image is [here]({static}/images/receipt2.jpg).
 
 
 ## Algorithm
@@ -109,7 +109,7 @@ The preprocessing script takes a possibly-shitty input image, and prepares it fo
 
 I initially experimented with directly detecting the corners using templates, rather than detecting the edges and then computing their intersection. I've found the method desribed above to be more robust to cast shadows that fall across the receipt and to work better when the receipt is not lying flat on the surface.
 
-The notebook used to produce develop the preprocessing script can be viewed [here]({filename}/notebooks/preprocess.html) or downloaded [here]({filename}/notebooks/preprocess.ipynb).
+The notebook used to produce develop the preprocessing script can be viewed [here]({static}/notebooks/preprocess.html) or downloaded [here]({static}/notebooks/preprocess.ipynb).
 
 ### OCR
 
@@ -128,7 +128,7 @@ All of the receipts that I've looked at for this project have the prices right-a
 
 Finally the results are packed into a JSON object and served by Flask.
 
-The notebook used to produce develop the OCR and content parsing can be viewed [here]({filename}/notebooks/azure_api.html) or downloaded [here]({filename}/notebooks/azure_api.ipynb).
+The notebook used to produce develop the OCR and content parsing can be viewed [here]({static}/notebooks/azure_api.html) or downloaded [here]({static}/notebooks/azure_api.ipynb).
 
 ## Front end
 
