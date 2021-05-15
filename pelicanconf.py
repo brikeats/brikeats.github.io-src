@@ -21,6 +21,10 @@ READERS = {'notebooks': None}
 #MARKDOWN = ['mdx_video']
 
 
+# don't show dates for blog posts
+DEFAULT_DATE_FORMAT = ''
+DATE_FORMAT = {'en': ''}
+
 INDEX_SAVE_AS = 'blog.html'  # has the effect seeting the home page to pages/index.html
 
 DISPLAY_PAGES_ON_MENU = False
