@@ -34,7 +34,7 @@ DISPLAY_CATEGORIES_ON_MENU = False
 MENUITEMS = (
     ('home', '/'),
     ('projects', '/blog.html'),
-    ('beer', '/beer.html')
+    ('recipes', '/beer.html')
 )
 
 #### Select a theme

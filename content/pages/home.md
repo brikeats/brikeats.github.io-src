@@ -1,4 +1,4 @@
-Title: Brian Keating
+Title:  
 Slug: index
 URL: 
 Author: Brian Keating

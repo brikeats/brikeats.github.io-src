@@ -4,7 +4,7 @@ Author: Brian Keating
 Summary: Beer Recipes
 save_as: beer.html
 
-I have been a homebrewer since 2005. Linked below are my latest recipes. Recipes formulated with the help of Brewer's Friend [recipe calculator](https://www.brewersfriend.com/homebrew/recipe/calculator).
+I have been a homebrewer since 2005. Linked below are my latest recipes with tasting notes. Recipes formulated with the help of Brewer's Friend [recipe calculator](https://www.brewersfriend.com/homebrew/recipe/calculator).
 
 [st patrick's day stout](beer/stpatricksstout.htm) 3/20. This was kegged and ready 2 days after covid-19 shutdown. It is untouched as of 12/20.
 
